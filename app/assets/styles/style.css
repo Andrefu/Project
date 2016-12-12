@@ -1,0 +1,16 @@
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic-content-container";
+
+/*Gli import devono essere all'inizio del file*/        
+/*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/
+/*import non è nativo di css ma postCSS lo tradurrà*/
+

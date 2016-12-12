@@ -1,0 +1,49 @@
+.row {
+
+	@mixin clearfix;
+	
+	&--gutters {
+		margin-right: -65px; /*negative margin allows for */
+	}
+	
+	/*adds horizontal padding to all columns adding margin*/
+	&--gutters > div { /* il simbolo > seleziona tutti i children con tag div*/
+		padding-right: 65px;
+	
+	}
+	
+	/*adds margin until screen is medium*/
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
+	}
+	
+	/*per schermi medi si applica la ripartizione sotto*/
+	@mixin atMedium {
+		
+		&__b-margin-until-medium {
+			margin-bottom: 0;
+		}
+		
+		/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
+		&__medium-4 { 
+			float: left;
+			width: 33.3%; /* % di larghezza dello schermo*/
+		}
+		
+		&__medium-4--larger {
+			width: 37%;
+		}
+		
+		&__medium-8 { 
+			float: left;
+			width: 66.6%;
+		}	
+		
+		&__medium-8--smaller {
+			width: 63%;
+		}
+	}
+	
+	
+	
+}

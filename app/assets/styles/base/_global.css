@@ -1,0 +1,20 @@
+body {                                   
+	font-family: 'Roboto', sans-serif;  /*body applies the following code to every element on the webpage. It is said to be global css*/
+	color: #333;						/*the "," represents the alternative font if the first is not available on the browser.*/
+}
+
+img { 									/*This will apply to every image*/
+	max-width: 100%;  /* */
+	height: auto;
+}
+
+/*the symbol "*" selects every single element on the page*/
+* {
+	box-sizing: border-box; /*questa linea impone che il padding non venga calcolato nel width 
+	                        evitando che gli elementi vadano a capo*/
+}
+
+/*will make all links orange*/
+a {
+	color: $mainOrange;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+	overflow: hidden; /*hides all the stuff getting out of the wrapper*/
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+	
+&--medium {
+	max-width: 976px; /*arghezza massima pari alla larghezza immagine*/
+	}
+	
+	/*any wrapper within another wrapper will have no padding.
+	this way on the mobile there will be no padding*/
+	.wrapper { 
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	&--b-margin {
+		margin-bottom: 1rem;
+		
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
+}
