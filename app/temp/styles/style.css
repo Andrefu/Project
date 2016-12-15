@@ -394,6 +394,7 @@ menu {
   display: table;
 }.row--gutters {
   margin-right: -65px;/*negative margin allows for */
+<<<<<<< HEAD
 }.row--gutters-large {
   margin-right: -100px;
 }/*adds horizontal padding to all columns adding margin*/.row--gutters > div {/* il simbolo > seleziona tutti i children con tag div*/
@@ -401,6 +402,27 @@ menu {
 }.row--gutters-large > div {
   padding-right: 100px;
 }/*adds margin until screen is medium*/.row__b-margin-until-medium {
+=======
+}
+
+.row--gutters-large {
+  margin-right: -100px;
+}
+
+/*adds horizontal padding to all columns adding margin*/
+
+.row--gutters > div {/* il simbolo > seleziona tutti i children con tag div*/
+  padding-right: 65px;
+}
+
+.row--gutters-large > div {
+  padding-right: 100px;
+}
+
+/*adds margin until screen is medium*/
+
+.row__b-margin-until-medium {
+>>>>>>> our-features
   margin-bottom: 1rem;
 }/*per schermi medi si applica la ripartizione sotto*/@media (min-width: 800px){.row{/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
   }.row__b-margin-until-medium{
@@ -410,15 +432,27 @@ menu {
     width: 33.3%;/* % di larghezza dello schermo*/
   }.row__medium-4--larger{
     width: 37%;
+<<<<<<< HEAD
   }.row__medium-6{
     float: left;
     width: 50%;
   }.row__medium-8{
+=======
+  }
+
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .row__medium-8 {
+>>>>>>> our-features
     float: left;
     width: 66.6%;
   }.row__medium-8--smaller{
     width: 63%;
   }
+<<<<<<< HEAD
 }.section-title  {
 	font-size: 2.55rem;
 	font-weight: 300;
@@ -429,16 +463,68 @@ menu {
 }.section-title strong {
   font-weight: 500;
 }.section-title__icon {
+=======
+}
+
+.generic-content-container p {
+  font-weight: 300;
+  line-height: 1.65;/*line-height does not require units*/
+  margin: 0 0 1.8rem 0;/*top, right, bottom & left margins (clockwise)*/
+}
+
+/*dimensione del carattere più piccola per schermi piccoli*/
+
+@media (min-width: 530px) {
+
+  .generic-content-container p {/*la query media permette di selezionare lo schermo*/
+    font-size: 1.125 rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+/*any links (a) laying within a paragraph (p) will have the following rule applied*/
+
+.generic-content-container p a {
+  font-weight: 700;/*400 is normal text*/
+}
+
+.section-title  {
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .section-title {/*la query media permette di selezionare lo schermo*/
+    font-size: 3.75rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.section-title strong {
+  font-weight: 500;
+}
+
+.section-title__icon {
+>>>>>>> our-features
   display: block;/*this will make the text drop below this element*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: .5rem;
+<<<<<<< HEAD
 }@media (min-width: 530px){.section-title__icon{/*la query media permette di selezionare lo schermo*/
+=======
+}
+
+@media (min-width: 530px) {
+
+  .section-title__icon {/*la query media permette di selezionare lo schermo*/
+>>>>>>> our-features
     margin-right: .5rem;
     margin-left: 0;
     display: inline-block;
     margin-bottom: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
+<<<<<<< HEAD
 }.feature-item {
 	position: relative;
 	padding-bottom: 2.5rem;
@@ -453,15 +539,63 @@ menu {
     left: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
 }.feature-item__title {
+=======
+}
+
+.feature-item {
+	position: relative;
+	padding-bottom: 2.5rem;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item {/*la query media permette di selezionare lo schermo*/
+    padding-left: 94px;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item__icon {/*la query media permette di selezionare lo schermo*/
+    position: absolute;/*it is absolute position relative to its parent i.e. feature-item*/
+    left: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.feature-item__title {
+>>>>>>> our-features
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: .7em;
   margin-bottom: .8rem;
   text-align: center;
+<<<<<<< HEAD
 }@media (min-width: 530px){.feature-item__title{/*la query media permette di selezionare lo schermo*/
+=======
+}
+
+@media (min-width: 530px) {
+
+  .feature-item__title {/*la query media permette di selezionare lo schermo*/
+>>>>>>> our-features
     text-align: left;
     margin-top: 1em;
     font-size: 1.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
+<<<<<<< HEAD
 }/*Gli import devono essere all'inizio del file*//*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*//*import non è nativo di css ma postCSS lo tradurrà*/
+=======
+}
+
+/*Gli import devono essere all'inizio del file*/
+
+/*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/
+
+/*import non è nativo di css ma postCSS lo tradurrà*/
+>>>>>>> our-features
 
