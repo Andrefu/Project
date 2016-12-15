@@ -1,255 +1,148 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/**
+@import "modules/_generic-content-container";/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css *//**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
- */
-
-/* Document
-   ========================================================================== */
-
-html {
+ *//* Document
+   ========================================================================== */html {
   font-family: sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
+}/* Sections
+   ========================================================================== *//**
  * Remove the margin in all browsers (opinionated).
- */
-
-body {
+ */body {
   margin: 0;
-}
-
-/**
+}/**
  * Add the correct display in IE 9-.
- */
-
-article,
+ */article,
 aside,
 footer,
 header,
 nav,
 section {
   display: block;
-}
-
-/**
+}/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
+ */h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
+}/* Grouping content
+   ========================================================================== *//**
  * Add the correct display in IE 9-.
  * 1. Add the correct display in IE.
- */
-
-figcaption,
+ */figcaption,
 figure,
 main { /* 1 */
   display: block;
-}
-
-/**
+}/**
  * Add the correct margin in IE 8.
- */
-
-figure {
+ */figure {
   margin: 1em 40px;
-}
-
-/**
+}/**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
- */
-
-hr {
+ */hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
-}
-
-/**
+}/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
+ */pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
+}/* Text-level semantics
+   ========================================================================== *//**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
+ */a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
-}
-
-/**
+}/**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
- */
-
-a:active,
+ */a:active,
 a:hover {
   outline-width: 0;
-}
-
-/**
+}/**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
+ */abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
-}
-
-/**
+}/**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
+ */b,
 strong {
   font-weight: inherit;
-}
-
-/**
+}/**
  * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
+ */b,
 strong {
   font-weight: bolder;
-}
-
-/**
+}/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
+ */code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-/**
+}/**
  * Add the correct font style in Android 4.3-.
- */
-
-dfn {
+ */dfn {
   font-style: italic;
-}
-
-/**
+}/**
  * Add the correct background and color in IE 9-.
- */
-
-mark {
+ */mark {
   background-color: #ff0;
   color: #000;
-}
-
-/**
+}/**
  * Add the correct font size in all browsers.
- */
-
-small {
+ */small {
   font-size: 80%;
-}
-
-/**
+}/**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
- */
-
-sub,
+ */sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-}
-
-sub {
+}sub {
   bottom: -0.25em;
-}
-
-sup {
+}sup {
   top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
+}/* Embedded content
+   ========================================================================== *//**
  * Add the correct display in IE 9-.
- */
-
-audio,
+ */audio,
 video {
   display: inline-block;
-}
-
-/**
+}/**
  * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
+ */audio:not([controls]) {
   display: none;
   height: 0;
-}
-
-/**
+}/**
  * Remove the border on images inside links in IE 10-.
- */
-
-img {
+ */img {
   border-style: none;
-}
-
-/**
+}/**
  * Hide the overflow in IE.
- */
-
-svg:not(:root) {
+ */svg:not(:root) {
   overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
+}/* Forms
+   ========================================================================== *//**
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
+ */button,
 input,
 optgroup,
 select,
@@ -258,243 +151,141 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
-}
-
-/**
+}/**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
- */
-
-button,
+ */button,
 input { /* 1 */
   overflow: visible;
-}
-
-/**
+}/**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
+ */button,
 select { /* 1 */
   text-transform: none;
-}
-
-/**
+}/**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
+ */button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
-}
-
-/**
+}/**
  * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
+ */button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
-}
-
-/**
+}/**
  * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
+ */button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-/**
+}/**
  * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
+ */fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
-}
-
-/**
+}/**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
- */
-
-legend {
+ */legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
-}
-
-/**
+}/**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
+ */progress {
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
-}
-
-/**
+}/**
  * Remove the default vertical scrollbar in IE.
- */
-
-textarea {
+ */textarea {
   overflow: auto;
-}
-
-/**
+}/**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
+ */[type="checkbox"],
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
-}
-
-/**
+}/**
  * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
+ */[type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
-}
-
-/**
+}/**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
+ */[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
-}
-
-/**
+}/**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-cancel-button,
+ */[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-/**
+}/**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
+ */::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
+}/* Interactive
+   ========================================================================== *//*
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
- */
-
-details, /* 1 */
+ */details, /* 1 */
 menu {
   display: block;
-}
-
-/*
+}/*
  * Add the correct display in all browsers.
- */
-
-summary {
+ */summary {
   display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-
-/**
+}/* Scripting
+   ========================================================================== *//**
  * Add the correct display in IE 9-.
- */
-
-canvas {
+ */canvas {
   display: inline-block;
-}
-
-/**
+}/**
  * Add the correct display in IE.
- */
-
-template {
+ */template {
   display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-
-/**
+}/* Hidden
+   ========================================================================== *//**
  * Add the correct display in IE 10-.
- */
-
-[hidden] {
+ */[hidden] {
   display: none;
-}
-
-/*pezzo di codice eseguito solo per device con schermo piccolo*/
-
-body {                                   
+}/*pezzo di codice eseguito solo per device con schermo piccolo*/body {                                   
 	font-family: 'Roboto', sans-serif;  /*body applies the following code to every element on the webpage. It is said to be global css*/
 	color: #333;						/*the "," represents the alternative font if the first is not available on the browser.*/
-}
-
-img { 									/*This will apply to every image*/
+}img { 									/*This will apply to every image*/
 	max-width: 100%;  /* */
 	height: auto;
-}
-
-/*the symbol "*" selects every single element on the page*/
-
-* {
+}/*the symbol "*" selects every single element on the page*/* {
 	box-sizing: border-box; /*questa linea impone che il padding non venga calcolato nel width 
 	                        evitando che gli elementi vadano a capo*/
-}
-
-/*will make all links orange*/
-
-a {
+}/*will make all links orange*/a {
 	color: #d59541;
-}
-
-.large-hero{
+}.large-hero{
 	border-bottom: 10px solid #2f5572;
 	position: relative;
-}
-
-.large-hero__image {
+}.large-hero__image {
   display: block;
-}
-
-.large-hero__text-content {/*il simbolo & consente fa si che gulp nel css principa crei selettori large_hero + testo dopo & */
+}.large-hero__text-content {/*il simbolo & consente fa si che gulp nel css principa crei selettori large_hero + testo dopo & */
   position: absolute;
   top: 50%;/*allineamento del bordo superiore del contenuto con la mediana (50%) del box large-hero*/
   -webkit-transform: translateY(-50%);
@@ -502,37 +293,23 @@ a {
   left: 0;/*allineamento orizzontale*/
   width: 100%;
   text-align: center;
-}
-
-.large-hero__title {
+}.large-hero__title {
   font-weight: 300;/*esempio di nested blocks*/
   color: #2f5572;
   font-size: 2rem;
   margin: 0;
-}
-
-@media (min-width: 530px) {
-
-  .large-hero__title {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.large-hero__title{/*la query media permette di selezionare lo schermo*/
     font-size: 4.8rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.large-hero__subtitle {
+}.large-hero__subtitle {
   font-weight: 300;
   color: #2f5572;
   font-size: 1.5rem;
   margin: 0;
-}
-
-@media (min-width: 530px) {
-
-  .large-hero__subtitle {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.large-hero__subtitle{/*la query media permette di selezionare lo schermo*/
     font-size: 2.9rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.large-hero__description {
+}.large-hero__description {
   color: #FFF;
   font-size: 1.1rem;
   font-weight: 100;
@@ -540,222 +317,151 @@ a {
   max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 530px) {
-
-  .large-hero__description {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.large-hero__description{/*la query media permette di selezionare lo schermo*/
     font-size: 1.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.btn {
+}.btn {
 	background-color: #2f5572;
 	color: #FFF;
 	text-decoration: none;   /*elimina la sottolineatura*/
 	padding: .75rem 1.2rem;  /*vertical e horizontal padding ovvero bordo intorno al contenuto */
 	display: inline-block;
-}
-
-/*gli elementi intorno sapranno del suo vertical padding*/
-
-.btn--orange {
+}/*gli elementi intorno sapranno del suo vertical padding*/.btn--orange {
   background-color: #d59541;
-}
-
-.btn--large {
+}.btn--large {
   padding: 1.1rem 1.9rem;
-}
-
-@media (min-width: 530px) {
-
-  .btn--large {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.btn--large{/*la query media permette di selezionare lo schermo*/
     font-size: 1.25rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.wrapper {
+}.wrapper {
 	overflow: hidden; /*hides all the stuff getting out of the wrapper*/
 	padding-left: 18px;
 	padding-right: 18px;
 	max-width: 1236px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.wrapper--medium {
+}.wrapper--medium {
   max-width: 976px;/*arghezza massima pari alla larghezza immagine*/
-}
-
-/*any wrapper within another wrapper will have no padding.
-	this way on the mobile there will be no padding*/
-
-.wrapper .wrapper {
+}/*any wrapper within another wrapper will have no padding.
+	this way on the mobile there will be no padding*/.wrapper .wrapper {
   padding-left: 0;
   padding-right: 0;
-}
-
-.wrapper--b-margin {
+}.wrapper--b-margin {
   margin-bottom: 1rem;
-}
-
-@media (min-width: 530px) {
-
-  .wrapper--b-margin {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.wrapper--b-margin{/*la query media permette di selezionare lo schermo*/
     margin-bottom: 3.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.page-section {
+}.page-section {
 	
 	padding: 1.2rem 0;
-}
-
-@media (min-width: 800px) {
-
-  .page-section {
+}@media (min-width: 800px){.page-section{
     padding: 4.5rem 0;/*horizontal and vertical padding*/
   }
-}
-
-.page-section--blue {
+}.page-section--blue {
   background-color: #2f5572;
   color: #FFF;
-}
-
-.headline {
+}.headline {
 	font-size: 1.9rem;
 	font-weight: 300;
 	color: #2f5572;
-}
-
-@media (min-width: 530px) {
-
-  .headline {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.headline{/*la query media permette di selezionare lo schermo*/
     font-size: 2.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.headline--centered {
+}.headline--centered {
   text-align: center;
-}
-
-.headline--orange {
+}.headline--orange {
   color: #d59541;
-}
-
-.headline--small {
+}.headline--small {
   font-size: 1.2rem;
-}
-
-@media (min-width: 530px) {
-
-  .headline--small {/*la query media permette di selezionare lo schermo*/
+}@media (min-width: 530px){.headline--small{/*la query media permette di selezionare lo schermo*/
     font-size: 1.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-.headline--narrow {
+}.headline--narrow {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.headline--light {
+}.headline--light {
   font-weight: 100;
-}
-
-.headline--b-margin-small {
+}.headline--b-margin-small {
   margin-bottom: .5 em;
-}
-
-.headline--b-margin-large {
+}.headline--b-margin-large {
   margin-bottom: 1.6 em;
-}
-
-/*azzera il top margin dell'elemento*/
-
-.headline--no-t-margin {
+}/*azzera il top margin dell'elemento*/.headline--no-t-margin {
   margin-top: 0;
-}
-
-/*the following selector will create fake content after all the content in row div*/
-
-.row::after {
+}/*the following selector will create fake content after all the content in row div*/.row::after{
   content: " ";
   clear: both;
   display: table;
-}
-
-.row--gutters {
+}.row--gutters {
   margin-right: -65px;/*negative margin allows for */
-}
-
-/*adds horizontal padding to all columns adding margin*/
-
-.row--gutters > div {/* il simbolo > seleziona tutti i children con tag div*/
+}.row--gutters-large {
+  margin-right: -100px;
+}/*adds horizontal padding to all columns adding margin*/.row--gutters > div {/* il simbolo > seleziona tutti i children con tag div*/
   padding-right: 65px;
-}
-
-/*adds margin until screen is medium*/
-
-.row__b-margin-until-medium {
+}.row--gutters-large > div {
+  padding-right: 100px;
+}/*adds margin until screen is medium*/.row__b-margin-until-medium {
   margin-bottom: 1rem;
-}
-
-/*per schermi medi si applica la ripartizione sotto*/
-
-@media (min-width: 800px) {
-
-  .row {/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
-  }
-
-  .row__b-margin-until-medium {
+}/*per schermi medi si applica la ripartizione sotto*/@media (min-width: 800px){.row{/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
+  }.row__b-margin-until-medium{
     margin-bottom: 0;
-  }
-
-  .row__medium-4 {
+  }.row__medium-4{
     float: left;
     width: 33.3%;/* % di larghezza dello schermo*/
-  }
-
-  .row__medium-4--larger {
+  }.row__medium-4--larger{
     width: 37%;
-  }
-
-  .row__medium-8 {
+  }.row__medium-6{
+    float: left;
+    width: 50%;
+  }.row__medium-8{
     float: left;
     width: 66.6%;
-  }
-
-  .row__medium-8--smaller {
+  }.row__medium-8--smaller{
     width: 63%;
   }
-}
-
-.generic-content-container p {
-  line-height: 1.65;/*line-height does not require units*/
-  margin: 1.8rem 0;
-}
-
-/*dimensione del carattere più piccola per schermi piccoli*/
-
-@media (min-width: 530px) {
-
-  .generic-content-container p {/*la query media permette di selezionare lo schermo*/
-    font-size: 1.125 rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+}.section-title  {
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center;
+}@media (min-width: 530px){.section-title{/*la query media permette di selezionare lo schermo*/
+    font-size: 3.75rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
   }
-}
-
-/*any links (a) laying within a paragraph (p) will have the following rule applied*/
-
-.generic-content-container p a {
-  font-weight: 700;/*400 is normal text*/
-}
-
-/*Gli import devono essere all'inizio del file*/
-
-/*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/
-
-/*import non è nativo di css ma postCSS lo tradurrà*/
+}.section-title strong {
+  font-weight: 500;
+}.section-title__icon {
+  display: block;/*this will make the text drop below this element*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .5rem;
+}@media (min-width: 530px){.section-title__icon{/*la query media permette di selezionare lo schermo*/
+    margin-right: .5rem;
+    margin-left: 0;
+    display: inline-block;
+    margin-bottom: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}.feature-item {
+	position: relative;
+	padding-bottom: 2.5rem;
+}@media (min-width: 530px){.feature-item{/*la query media permette di selezionare lo schermo*/
+    padding-left: 94px;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}@media (min-width: 530px){.feature-item__icon{/*la query media permette di selezionare lo schermo*/
+    position: absolute;/*it is absolute position relative to its parent i.e. feature-item*/
+    left: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}.feature-item__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: .7em;
+  margin-bottom: .8rem;
+  text-align: center;
+}@media (min-width: 530px){.feature-item__title{/*la query media permette di selezionare lo schermo*/
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}/*Gli import devono essere all'inizio del file*//*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*//*import non è nativo di css ma postCSS lo tradurrà*/
 
