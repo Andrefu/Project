@@ -6,10 +6,17 @@
 		margin-right: -65px; /*negative margin allows for */
 	}
 	
+	&--gutters-large {
+		margin-right: -100px;
+	}
+	
 	/*adds horizontal padding to all columns adding margin*/
 	&--gutters > div { /* il simbolo > seleziona tutti i children con tag div*/
 		padding-right: 65px;
+	}
 	
+	&--gutters-large > div {
+		padding-right: 100px;
 	}
 	
 	/*adds margin until screen is medium*/
@@ -34,6 +41,11 @@
 			width: 37%;
 		}
 		
+		&__medium-6 { 
+			float: left;
+			width: 50%;
+		}
+		
 		&__medium-8 { 
 			float: left;
 			width: 66.6%;
@@ -43,7 +55,4 @@
 			width: 63%;
 		}
 	}
-	
-	
-	
 }

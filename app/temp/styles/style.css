@@ -691,10 +691,18 @@ a {
   margin-right: -65px;/*negative margin allows for */
 }
 
+.row--gutters-large {
+  margin-right: -100px;
+}
+
 /*adds horizontal padding to all columns adding margin*/
 
 .row--gutters > div {/* il simbolo > seleziona tutti i children con tag div*/
   padding-right: 65px;
+}
+
+.row--gutters-large > div {
+  padding-right: 100px;
 }
 
 /*adds margin until screen is medium*/
@@ -723,6 +731,11 @@ a {
     width: 37%;
   }
 
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
+
   .row__medium-8 {
     float: left;
     width: 66.6%;
@@ -734,8 +747,9 @@ a {
 }
 
 .generic-content-container p {
+  font-weight: 300;
   line-height: 1.65;/*line-height does not require units*/
-  margin: 1.8rem 0;
+  margin: 0 0 1.8rem 0;/*top, right, bottom & left margins (clockwise)*/
 }
 
 /*dimensione del carattere più piccola per schermi piccoli*/
@@ -751,6 +765,82 @@ a {
 
 .generic-content-container p a {
   font-weight: 700;/*400 is normal text*/
+}
+
+.section-title  {
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .section-title {/*la query media permette di selezionare lo schermo*/
+    font-size: 3.75rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.section-title strong {
+  font-weight: 500;
+}
+
+.section-title__icon {
+  display: block;/*this will make the text drop below this element*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 530px) {
+
+  .section-title__icon {/*la query media permette di selezionare lo schermo*/
+    margin-right: .5rem;
+    margin-left: 0;
+    display: inline-block;
+    margin-bottom: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.feature-item {
+	position: relative;
+	padding-bottom: 2.5rem;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item {/*la query media permette di selezionare lo schermo*/
+    padding-left: 94px;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item__icon {/*la query media permette di selezionare lo schermo*/
+    position: absolute;/*it is absolute position relative to its parent i.e. feature-item*/
+    left: 0;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
+}
+
+.feature-item__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: .7em;
+  margin-bottom: .8rem;
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item__title {/*la query media permette di selezionare lo schermo*/
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1.875rem;/*se lo schermo raggiunge la dimensione min di 530 px allora font-size è 4.8 rem*/
+  }
 }
 
 /*Gli import devono essere all'inizio del file*/
