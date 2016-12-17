@@ -2,12 +2,20 @@
 
 	@mixin clearfix;
 	
+	&--t-padding {
+		padding-top: 80px;
+	}
+	
 	&--gutters {
 		margin-right: -65px; /*negative margin allows for */
 	}
 	
 	&--gutters-large {
 		margin-right: -100px;
+	}
+	
+	&--gutters-small {
+		margin-right: -45px;
 	}
 	
 	/*adds horizontal padding to all columns adding margin*/
@@ -17,6 +25,10 @@
 	
 	&--gutters-large > div {
 		padding-right: 100px;
+	}
+	
+	&--gutters-small > div {
+		padding-right: 45px;
 	}
 	
 	/*adds margin until screen is medium*/
@@ -54,5 +66,61 @@
 		&__medium-8--smaller {
 			width: 63%;
 		}
+	}
+	
+	@mixin atLarte {
+		
+		&__b-margin-until-large {
+			margin-bottom: 0;
+		}
+		
+		/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
+		&__large-4 { 
+			float: left;
+			width: 33.3%; /* % di larghezza dello schermo*/
+		}
+		
+		&__large-4--larger {
+			width: 37%;
+		}
+		
+		&__large-6 { 
+			float: left;
+			width: 50%;
+		}
+		
+		&__large-8 { 
+			float: left;
+			width: 66.6%;
+		}	
+		
+		&__large-8--smaller {
+			width: 63%;
+		}
+	}
+	
+	/*equal height rules. Permette di far prendere ai riquadri l'altezza di quello più grande*/
+	&--equal-height-at-medium {
+		@mixin atMedium {
+			display: flex;
+		}
+		
+		& > div {
+			float: none;
+			display: flex;
+		}
+	
+	}
+	
+	&--equal-height-at-large {
+		@mixin atLarge {
+			display: flex;
+		}
+		
+		& > div {
+			float: none;
+			display: flex;
+		}
+	
 	}
 }
