@@ -353,7 +353,7 @@ menu {
   color: #FFF;
 }.page-section--testimonials {
   background-color: #e0e6ef;
-}@media (min-width: 800px){.page-section--testimonials{
+}@media (min-width: 1010px){.page-section--testimonials{
     background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;/*vertical & horizontal alignment, tiling*/
     background-size: cover;/*will cover the entire containing div*/
   }
@@ -420,6 +420,23 @@ menu {
     float: left;
     width: 66.6%;
   }.row__medium-8--smaller{
+    width: 63%;
+  }
+}@media (min-width: 1010px){.row{/*questa class consente all'elemento di occupare 4/12 della larghezza dello schermo*/
+  }.row__b-margin-until-large{
+    margin-bottom: 0;
+  }.row__large-4{
+    float: left;
+    width: 33.3%;/* % di larghezza dello schermo*/
+  }.row__large-4--larger{
+    width: 37%;
+  }.row__large-6{
+    float: left;
+    width: 50%;
+  }.row__large-8{
+    float: left;
+    width: 66.6%;
+  }.row__large-8--smaller{
     width: 63%;
   }
 }/*equal height rules. Permette di far prendere ai riquadri l'altezza di quello più grande*/@media (min-width: 800px){.row--equal-height-at-medium{
@@ -503,7 +520,7 @@ menu {
 	background-color: rgba(255, 255, 255, .8); /*red, green, blue, alpha transparency (0 to 1)*/
 	padding: 0 18px 1px 18px; /*padding intorno al contenuto dell'elemento. il 1 px serve a dare modo allo sp*/
 	margin-bottom: 98px;
-}@media (min-width: 800px){.testimonial{
+}@media (min-width: 1010px){.testimonial{
     padding: 0 1.8125rem 1px 1.8125rem;/*padding intorno al contenuto dell'elemento. il 1 px serve a dare modo allo sp*/
     margin-bottom: 0;
   }
@@ -530,5 +547,56 @@ menu {
   font-size: 0.9375em;
   font-weight: 400;
   margin: .25rem 0 1rem 0;
-}/*Gli import devono essere all'inizio del file*//*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*//*import non è nativo di css ma postCSS lo tradurrà*/
+}/*do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/Sprites*//*any code in the middle will be looped for each icon*//*any code between the first brackets will be looped only once*/.icon {
+			background-image: url('/assets/images/sprites/sprite-0f9283b3.svg'); /*url path toward the sprite svg file. the part in brackets is needed due */
+		}.icon--clear-view-escapes { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 142.4px;
+		height: 59.53px;
+		background-position: 0 0;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--comment { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 64px;
+		height: 64px;
+		background-position: 99.70443349753694% 0;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--facebook { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 21.23px;
+		height: 42.01px;
+		background-position: 26.040607071652357% 45.795830448496034%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--fire { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 56px;
+		height: 64px;
+		background-position: 0 99.56481481481481%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--globe { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 64px;
+		height: 64px;
+		background-position: 27.586206896551722% 99.56481481481481%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--instagram { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 42.01px;
+		height: 42.01px;
+		background-position: 63.2917018534157% 49.234556504346486%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--mail { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 64px;
+		height: 48px;
+		background-position: 0 48.00806451612903%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--rain { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 64px;
+		height: 64px;
+		background-position: 99.70443349753694% 59.25925925925926%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--star { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 64px;
+		height: 64px;
+		background-position: 59.11330049261084% 99.56481481481481%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--twitter { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 51.78px;
+		height: 42.06px;
+		background-position: 94.04330452560171% 98.50700323226104%;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--wifi { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 60px;
+		height: 64px;
+		background-position: 68.79227053140097% 0;   /*the variable names are specific to the package*/                        
+	}/*any code between the first brackets will be looped only once*/.icon--youtube { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: 34.75px;
+		height: 42px;
+		background-position: 36.69752421959096% 45.792307692307695%;   /*the variable names are specific to the package*/                        
+	}/*Gli import devono essere all'inizio del file*//*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*//*import non è nativo di css ma postCSS lo tradurrà*/
 

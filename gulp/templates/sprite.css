@@ -1,0 +1,17 @@
+/*do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/Sprites*/
+
+/*any code in the middle will be looped for each icon*/
+{{#shapes}}
+	/*any code between the first brackets will be looped only once*/
+	{{#first}} 
+		.icon {
+			background-image: url('/assets/images/sprites/{{{sprite}}}'); /*url path toward the sprite svg file. the part in brackets is needed due */
+		} 	
+	{{/first}}
+	.icon--{{base}} { /*the part in brackets allows to create a specific selector for each icon!!*/
+		width: {{width.outer}}px;
+		height: {{height.outer}}px;
+		background-position: {{position.relative.xy}};   /*the variable names are specific to the package*/                        
+	}
+{{/shapes}}
