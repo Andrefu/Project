@@ -13,6 +13,7 @@
 @import "modules/_feature-item";
 @import "modules/_testimonial";
 @import "modules/_sprite";
+@import "modules/_site-footer";
 
 /*Gli import devono essere all'inizio del file*/        
 /*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/
