@@ -22,6 +22,12 @@ gulp.task('watch', function(){
   watch('./app/assets/styles/**/*.css', function(){  // watch osserva il file del percorso. /**/ permette di far riferimento a qualsiasi cartella
      gulp.start('cssInject');   //in questo modo tutte le volte che si usa watch (monitora le change), viene attivato il metodo html.
   });                        //.start permette di accedere ad un metodo di gulp
+
+  //durante watch ricarica il file degli script se subisce modifiche
+  watch('./app/assets/scripts/**/*.js', function(){
+	  gulp.start('scriptsRefresh');
+  });
+  
 });
 
 //funzione cssInject per usare il file css compilato e usarlo sulla pagina html
@@ -30,3 +36,8 @@ gulp.task('cssInject', ['styles'],function() { //[''] esegue e completa 'styles'
 	.pipe(browserSync.stream()); //il metodo .stream() di pipe permette di rendere disponibile sul browser il file immesso nel pipe 
 								 //'./app/temp/styles/style.css' in questo caso
 });
+
+//task per far aggiornare la pagina web a seguito di modifiche degli script
+gulp.task('scriptsRefresh', ['scripts'], function() {
+	browserSync.reload();
+})

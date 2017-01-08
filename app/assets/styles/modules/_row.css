@@ -1,5 +1,6 @@
 .row {
-
+	
+	/*adds margins and paddings*/
 	@mixin clearfix;
 	
 	&--t-padding {
@@ -36,7 +37,7 @@
 		margin-bottom: 1rem;
 	}
 	
-	/*per schermi medi si applica la ripartizione sotto*/
+	/*Ripartizione delle dimensioni delle colonne per schermi di DIMENSIONE MEDIA*/
 	@mixin atMedium {
 		
 		&__b-margin-until-medium {
@@ -68,6 +69,7 @@
 		}
 	}
 	
+	/*Ripartizione delle dimensioni delle colonne per schermi di DIMENSIONE GRANDE*/
 	@mixin atLarge {
 		
 		&__b-margin-until-large {

@@ -7,13 +7,18 @@
 	}
 	
    &__text-content {              /*il simbolo & consente fa si che gulp nel css principa crei selettori large_hero + testo dopo & */
+	 padding-top: 88px;
 	 position: absolute;
 	 top: 50%;                    /*allineamento del bordo superiore del contenuto con la mediana (50%) del box large-hero*/
 	 transform: translateY(-50%); /*traslazione verticale dell'elemento del 50% della sua altezza verso l'alto*/
 	 left: 0;
 	/*allineamento orizzontale*/
      width: 100%;
-     text-align: center;	 
+     text-align: center;
+
+	@mixin atMedium {
+		 padding-top: 60px;
+	}
    }
    
    &__title {
