@@ -1428,6 +1428,20 @@ Instead edit gulp/templates/Sprites*/
   }
 }
 
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 /*Gli import devono essere all'inizio del file*/
 
 /*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/

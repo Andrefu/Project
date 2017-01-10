@@ -2,6 +2,8 @@ import $ from 'jquery';
 
 class MobileMenu {
 	constructor() { //parte eseguita subito appena la classe viene chiamata
+	
+		//new properties
 		this.siteHeader = $(".site-header"); //selects the entire header element from the DOM
 		this.menuIcon = $(".site-header__menu-icon"); //selezione dell'elemento icona del menu
 		this.menuContent = $(".site-header__menu-content");
