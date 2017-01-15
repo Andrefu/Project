@@ -12,7 +12,12 @@
 	}
 	
 	@mixin atMedium {
+		position: fixed;
 		background-color: rgba($mainBlue, .3); /*the syntac is not acceptable CSS but it works thanks to postCSS filter 'postcss-hexrgba'*/	
+	
+		&--dark {
+			background-color: rgba(23, 51, 72, .85);
+		}
 	}
 	
 	/*classe per il bottone*/
@@ -29,13 +34,20 @@
 		top: 0; /*aligns the element with the top margin*/
 		left: 50%;
 		transform: translateX(-50%) scale(.8);
+		transition: transform .6s ease-out;
 		transform-origin: 50% 0%;
 		background-color: $mainBlue;
 		padding: 25px 36px;
 		
+		
 		@mixin atMedium {
 			left: auto;
 			transform: translateX(0);
+			
+			/*selector will work only when .site-header--dark is selected*/
+			.site-header--dark &  {
+				transform: scale(.57);
+			}
 		}
 	}
 	
