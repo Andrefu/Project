@@ -10,6 +10,11 @@
 		max-width: 976px; /*larghezza massima pari alla larghezza immagine*/
 	}
 	
+	/*for the  _modal*/
+	&--narrow {
+		max-width: 470px;
+	}
+	
 	&--no-padding-until-medium {
 		padding-left: 0;
 		padding-right: 0;
@@ -43,4 +48,5 @@
 			margin-bottom: 3.875rem;
 		}
 	}
+
 }
