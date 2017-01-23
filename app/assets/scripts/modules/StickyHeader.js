@@ -4,6 +4,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
 	constructor() {
+		this.lazyImages = $(".lazyload"); //selector of all lazy elements
 		this.siteHeader = $(".site-header");
 		this.headerTriggerElement = $(".large-hero__title"); //elemento che farà partire il waypoint
 		this.createHeaderWaypoint();
@@ -11,6 +12,14 @@ class StickyHeader {
 		this.headerLinks = $(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
+		this.refreshAll();
+	}
+	
+	//metodo per far aggiornare i waypoints
+	refreshWaypoints() {
+		this.lazyImages.load(function() {  //.load() method executes code in () when the elements selected are loaded
+			Waypoint.refreAll(); //.refreshAll() waypoint method that refreshes all waypoints in the browser memory
+		});
 	}
 	
 	//metodo per far scorrere lentamente in corrispondenza della sezione del sito

@@ -11220,6 +11220,7 @@
 		function StickyHeader() {
 			_classCallCheck(this, StickyHeader);
 
+			this.lazyImages = (0, _jquery2.default)(".lazyload"); //selector of all lazy elements
 			this.siteHeader = (0, _jquery2.default)(".site-header");
 			this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title"); //elemento che farà partire il waypoint
 			this.createHeaderWaypoint();
@@ -11227,12 +11228,24 @@
 			this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 			this.createPageSectionWaypoints();
 			this.addSmoothScrolling();
+			this.refreshAll();
 		}
 
-		//metodo per far scorrere lentamente in corrispondenza della sezione del sito
+		//metodo per far aggiornare i waypoints
 
 
 		_createClass(StickyHeader, [{
+			key: 'refreshWaypoints',
+			value: function refreshWaypoints() {
+				this.lazyImages.load(function () {
+					//.load() method executes code in () when the elements selected are loaded
+					Waypoint.refreAll(); //.refreshAll() waypoint method that refreshes all waypoints in the browser memory
+				});
+			}
+
+			//metodo per far scorrere lentamente in corrispondenza della sezione del sito
+
+		}, {
 			key: 'addSmoothScrolling',
 			value: function addSmoothScrolling() {
 				this.headerLinks.smoothScroll();
