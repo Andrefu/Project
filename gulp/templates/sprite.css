@@ -6,11 +6,11 @@ Instead edit gulp/templates/Sprites*/
 	/*any code between the first brackets will be looped only once*/
 	{{#first}} 
 		.icon {
-			background-image: url('/assets/images/sprites/{{{sprite}}}'); /*url path toward the sprite svg file. the part in brackets is needed due */
+			background-image: url('../../assets/images/sprites/{{{sprite}}}'); /*url path toward the sprite svg file. the part in brackets is needed due */
 		}
 		
 		.no-svg .icon {
-			background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+			background-image: url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
 		}
 	{{/first}}
 	

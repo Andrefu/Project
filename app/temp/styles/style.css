@@ -692,7 +692,7 @@ a {
 @media (min-width: 1010px) {
 
   .page-section--testimonials.lazyloaded {
-    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;/*vertical & horizontal alignment, tiling*/
+    background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;/*vertical & horizontal alignment, tiling*/
     background-size: cover;/*will cover the entire containing div*/
   }
 }
@@ -1064,11 +1064,11 @@ Instead edit gulp/templates/Sprites*/
 /*any code between the first brackets will be looped only once*/
 
 .icon {
-			background-image: url('/assets/images/sprites/sprite-8eb89099.svg'); /*url path toward the sprite svg file. the part in brackets is needed due */
+			background-image: url('../../assets/images/sprites/sprite-8eb89099.svg'); /*url path toward the sprite svg file. the part in brackets is needed due */
 		}
 
 .no-svg .icon {
-			background-image: url('/assets/images/sprites/sprite-8eb89099.png');
+			background-image: url('../../assets/images/sprites/sprite-8eb89099.png');
 		}
 
 .icon--clear-view-escapes { /*the part in brackets allows to create a specific selector for each icon!!*/
