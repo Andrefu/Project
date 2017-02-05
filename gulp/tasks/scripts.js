@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 webpack = require('webpack');
 
 //task for automating the execution of webpack
-gulp.task('scripts', function(callback) {
+gulp.task('scripts', ['modernizr'], function(callback) {
 	webpack(require('../../webpack.config.js'), function(err, stats) {  //webpack() needs 2 arguments
 		if (err) {
 			console.log(err.toString())

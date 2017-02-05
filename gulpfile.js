@@ -3,6 +3,7 @@ require('./gulp/tasks/styles');//import the dedicated task file styles. N.B. req
 require('./gulp/tasks/watch');
 require('./gulp/tasks/sprites');
 require('./gulp/tasks/scripts');
+require('./gulp/tasks/modernizr');
 
 
 

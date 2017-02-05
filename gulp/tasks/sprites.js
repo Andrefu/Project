@@ -2,11 +2,24 @@ var gulp = require('gulp'), //require the entire gulp package
 svgSprite = require('gulp-svg-sprite'),
 rename = require('gulp-rename'),
 del = require('del');
+svg2png = require('gulp-svg2png');
 
 //object literal (comma-separated list of name-value pairs wrapped in braces, tidily encapsulating data)
 var config = {
+	shape: {
+		spacing: {
+			padding: 1  //aggiunta di un px per separare le immagini tra loro
+		}
+	},
 	mode: {
 		css: {
+			variables: {
+				replaceSvgWithPng: function() {
+					return function(sprite, render) {
+						return render(sprite).split('.svg').join('.png');
+					}
+				}
+			},
 			sprite: 'sprite.svg', //per eliminare il pezzo .css nel nome del file in _sprite.css
 			render: {
 				css: {
@@ -28,9 +41,16 @@ gulp.task('createSprite', ['beginClean'], function() { //1st argument: name of t
 		.pipe(gulp.dest('./app/temp/sprite/')); //brings the elaborated source stuff to its destination
 }); 
 
+//task creating a PNG copy of the SVG sprite file
+gulp.task('createPngCopy', ['createSprite'], function() {
+	return gulp.src('./app/temp/sprite/css/*.svg')
+	.pipe(svg2png())
+	.pipe(gulp.dest('./app/temp/sprite/css'));
+});
+
 //task per spostare il file sprite nella cartella delle immagini
-gulp.task('copySpriteGraphic', ['createSprite'], function() {
-	return gulp.src('./app/temp/sprite/css/**/*.svg')
+gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
+	return gulp.src('./app/temp/sprite/css/**/*.{svg,png}')
 	.pipe(gulp.dest('./app/assets/images/sprites'));
 });
 
@@ -46,4 +66,4 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
 });
 
 //task executing the above two commands for an eventual new icon in order to shorten the generation of a new sprite file
-gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic','copySpriteCSS', 'endClean']); //both tasks are executed at the same time
+gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy', 'copySpriteGraphic','copySpriteCSS', 'endClean']); //both tasks are executed at the same time
