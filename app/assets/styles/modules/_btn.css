@@ -16,4 +16,11 @@
 		   font-size: 1.25rem;
 		}
 	}
+	
+	&--user {
+		background-color: transparent;
+		padding: .1rem 0.5rem;
+		border: none;
+		width: 170px;
+	}
 }

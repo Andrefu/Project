@@ -6,7 +6,7 @@ import Modal from './modules/Modal';
 
 //new instances of the classes (names with lower case letters)
  var mobileMenu = new MobileMenu();
- //in order to have differente fading points for the feature-item and the testimonials, 2 differente instances of RevealOnScroll
+ //in order to have different fading points for the feature-item and the testimonials, 2 differente instances of RevealOnScroll
  //are necessary
  new RevealOnScroll($(".feature-item"), "85%");
  new RevealOnScroll($(".testimonial"), "60%"); 

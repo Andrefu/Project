@@ -17,8 +17,15 @@
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
+@import "modules/_menu";
 @import "modules/_modal";
 @import "modules/_social-icons";
+@import "modules/_formDiv";
+@import "modules/_error";
+@import "modules/_inputFields";
+@import "modules/_body";
+@import "modules/_theButtons";
+@import "modules/_dropdown";
 
 /*Gli import devono essere all'inizio del file*/        
 /*in tal modo imponiamo di importare il codice scritto nel file _large-hero. In realtà*/

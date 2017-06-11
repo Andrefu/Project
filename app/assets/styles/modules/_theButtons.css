@@ -1,0 +1,11 @@
+.theButtons
+{
+	width:222px;
+	height:40px;
+	background-color:#335495;
+	border:2px solid blue;
+	font-weight:bold;
+	font-family:tahoma;
+	color:#FFF;
+	border-radius:2px;
+}

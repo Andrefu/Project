@@ -23,6 +23,19 @@
 		border: 6px solid rgba(255, 255, 255, .8); /*bordo intorno all'immagine*/
 	}
 	
+	&__photo-dashboard {
+		border-radius: 80px;
+		overflow: hidden;   /*needed*/
+		width: 160px;
+		height: 160px;
+		margin: 0 auto -80px auto; /*-80 px serve a far salire il testo*/
+		position: relative;
+		top: -80px; /*per far uscire l'immagine fuori dal rettangolo*/
+		right: 500px;
+		border: 6px solid rgba(255, 255, 255, .8); /*bordo intorno all'immagine*/
+		z-index: 15;
+	}
+	
 	&__title {
 		color: $mainBlue;
 		text-align: center;
@@ -31,9 +44,25 @@
 		margin: 0;
 	}
 	
+	&__title-dashboard {
+		color: $mainBlue;
+		text-align: left;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin: 0;
+	}
+	
 	&__subtitle {
 		color: $mainOrange;
 		text-align: center;
+		font-size: 0.9375em;
+		font-weight: 400;
+		margin: .25rem 0 1rem 0;
+	}
+	
+	&__subtitle-dashboard {
+		color: $mainOrange;
+		text-align: left;
 		font-size: 0.9375em;
 		font-weight: 400;
 		margin: .25rem 0 1rem 0;

@@ -1,4 +1,4 @@
-var gulp = require('gulp'); //maing gulp package needed
+var gulp = require('gulp'); //main gulp package needed
 imagemin = require('gulp-imagemin'),
 del = require('del'),
 usemin = require('gulp-usemin'),

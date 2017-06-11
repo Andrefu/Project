@@ -7,6 +7,10 @@
 		padding-top: 80px;
 	}
 	
+	&--t-padding-dashboard {
+		padding-top: 250px;
+	}
+	
 	&--gutters {
 		margin-right: -65px; /*negative margin allows for */
 	}

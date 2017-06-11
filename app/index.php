@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 
-
-
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
+  <title>Roadryder</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
@@ -16,7 +14,7 @@
   <!-- endbuild -->
   
   <!-- build:js assets/scripts/Vendor.js -->
-  <script src="/temp/scripts/Vendor.js"></script> <!--must be run as soon as possible at the beginning of the page otherwise its useless-->
+  <script src="temp/scripts/Vendor.js"></script> <!--must be run as soon as possible at the beginning of the page otherwise its useless-->
   <!-- endbuild -->
   
   </head>
@@ -32,16 +30,23 @@
 		</div>
 		
 		<div class="site-header__menu-content">
+		
 			<div class="site-header__btn-container">
-			<a href="#" class="btn open-modal">Get in Touch</a>
+				<a href="login.php" class="btn open-modal">Accedi</a>
+				<a href="signup.php" class="btn open-modal">Iscriviti</a>
 			</div>
 			<nav class="primary-nav primary-nav--pull-right">
 			  <ul>
-				<li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-				<li><a href="#features" id="features-link">Features</a></li>
-				<li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+				<li><a href="#our-beginning" id="our-beginning-link">Come funziona</a></li>
 			  </ul>
 			</nav>
+			<div class="site-header__btn-container">
+				<a href="register-car.php" class="btn open-modal">Registra auto</a>
+				<a href="find-car.php" class="btn open-modal">Cerca auto</a>
+				<a href="#" class="btn open-modal">Offri passaggio</a>
+				<a href="find-car.php" class="btn open-modal">Cerca passaggio</a>
+			</div>
+			
 		</div>
 	</div>
   </header>
@@ -200,7 +205,7 @@
   </div>
   
   <!-- build:js assets/scripts/App.js -->
-  <script src="/temp/scripts/App.js"></script>
+  <script src="./temp/scripts/App.js"></script>
   <!-- endbuild -->
   
 </body>

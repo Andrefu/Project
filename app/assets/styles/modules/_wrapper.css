@@ -48,5 +48,16 @@
 			margin-bottom: 3.875rem;
 		}
 	}
+	
+	&--signup {
+		width:1000px;
+		background-color:#FFF;
+		margin:0px auto;
+		min-height:400px; 
+		border:1px solid #999;
+		border-bottom:3px solid #999;
+		border-radius:90px;
+		padding-bottom:20px;
+	}
 
 }

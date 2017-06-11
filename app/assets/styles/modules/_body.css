@@ -1,0 +1,8 @@
+.body {
+	
+	&--signup {
+		padding:0;
+		margin:0;
+		background-color:#CCC;
+	}
+}
